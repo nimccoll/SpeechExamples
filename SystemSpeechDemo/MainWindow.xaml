@@ -1,0 +1,27 @@
+﻿<Window x:Class="SystemSpeechDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SystemSpeechDemo"
+        mc:Ignorable="d"
+        Title="System.Speech Demo" Height="480" Width="640" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="1" Grid.Column="1" Name="imgRotator"></Image>
+        <Button Grid.Row="0" Grid.Column="0" Name="btnReset" FontSize="16" FontWeight="Bold" Width="80" Height="40" Click="btnReset_Click">RESET</Button>
+        <Button Grid.Row="0" Grid.Column="1" Name="btnUp" FontSize="16" FontWeight="Bold" Width="80" Height="40" Click="btnUp_Click">UP</Button>
+        <Button Grid.Row="2" Grid.Column="1" Name="btnDown" FontSize="16" FontWeight="Bold" Width="80" Height="40" Click="btnDown_Click">DOWN</Button>
+        <Button Grid.Row="1" Grid.Column="0" Name="btnLeft" FontSize="16" FontWeight="Bold" Width="80" Height="40" Click="btnLeft_Click">LEFT</Button>
+        <Button Grid.Row="1" Grid.Column="2" Name="btnRight" FontSize="16" FontWeight="Bold" Width="80" Height="40" Click="btnRight_Click">RIGHT</Button>
+    </Grid>
+</Window>
